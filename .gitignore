@@ -53,3 +53,14 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# PyBuilder
+target/
+
+.bundle
+.DS_Store
+db/*.sqlite3
+log/*.log
+tmp/
+public/system/images/
+public/system/avatars/
