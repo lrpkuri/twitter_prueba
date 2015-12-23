@@ -2,7 +2,7 @@
 
 from django.contrib import admin
 
-from useraccounts.models import UserSettings, UserFollowsUser
+from useraccounts.models import UserSettings, UserFollowsUser, UserLikesTuiti
 
 
 @admin.register(UserSettings)
@@ -17,3 +17,10 @@ class FollowerAdmin(admin.ModelAdmin):
     """Follows."""
 
     list_display = ('followed', 'follower', 'date_follow')
+
+
+@admin.register(UserLikesTuiti)
+class LikesAdmin(admin.ModelAdmin):
+    """Follows."""
+
+    list_display = ('user', 'tuiti', 'date_like')

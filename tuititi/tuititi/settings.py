@@ -26,6 +26,7 @@ INSTALLED_APPS = (
 
     # Apps installed
     'useraccounts',
+    'tuiti',
 )
 
 MIDDLEWARE_CLASSES = (
